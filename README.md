@@ -10,11 +10,11 @@ Download adams_advanced_contact_plotting_plugin.bin and adams_advanced_contact_p
 
 Once the plugin is loaded you can the steps below to generate the plot.
 
-1. Navigate to *Tools>Plot Contact K and C Components*.
-2. Select the contact for which you want to plot the stiffness and damping components.
+1. Navigate to *Tools>Plot Contact K and C Components*
+2. Select the contact for which you want to plot the stiffness and damping components
 3. Select the analysis
-4. Select a name for the new plot that will be created.
-5. Click OK
+4. Select a name for the new plot that will be created
+5. Click *OK*
 
 ## Modifying
 
