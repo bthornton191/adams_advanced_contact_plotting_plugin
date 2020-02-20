@@ -1,4 +1,4 @@
-# Advanced Contact Plotting (An MSC/Adams plugin)
+# Advanced Contact Plotting (an MSC/Adams plugin)
 
 An extension to MSC Adams PPT which adds a button for plotting the components of a contact normal force seperated in to stiffness force and damping force.
 
