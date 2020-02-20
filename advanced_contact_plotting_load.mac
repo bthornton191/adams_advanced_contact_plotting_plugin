@@ -1,0 +1,39 @@
+! ----------------------------------------------
+! Create a dialog box for the contact plot macro
+! ----------------------------------------------
+macro modify &
+   macro_name = .advanced_contact_plotting.contact_KC_plot &
+   create_panel = yes
+   
+! --------------------------------------
+! Delete separator if it's already there
+! --------------------------------------
+if condition=(DB_EXISTS(".gui.ppt_main.mbar.tools.sep__2"))
+   group empty group = select_list
+   group object add group=select_list &
+         objects = .gui.ppt_main.mbar.tools.sep__2
+   mdi delete_macro
+end
+
+! ----------------------------------------
+! Delete menu button if it's already there
+! ----------------------------------------
+if condition=(DB_EXISTS(".gui.ppt_main.mbar.tools.contact_kc_button"))
+   group empty group = select_list
+   group object add group=select_list &
+         objects = .gui.ppt_main.mbar.tools.contact_kc_button
+   mdi delete_macro
+end
+
+! -----------------------
+! Create a separator line
+! -----------------------
+interface separator create  &
+   separator_name = .gui.ppt_main.mbar.tools.sep__2
+
+! --------------------
+! Create a menu button
+! --------------------
+interface push create push_button_name= .gui.ppt_main.mbar.tools.contact_kc_button &
+  label="Plot Contact K and C Components" &
+  command = "interface dialog display dialog=.gui.dbox_contact_KC_plot"
