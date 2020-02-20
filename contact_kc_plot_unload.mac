@@ -1,0 +1,25 @@
+! ------------------------
+! Delete the contact macro
+! ------------------------
+if condition=(DB_EXISTS(".contact_KC_plot"))
+   macro delete &
+      macro_name = contact_KC_plot
+	  
+! -----------------
+! Delete the button
+! -----------------
+! Delete separator
+if condition=(DB_EXISTS(".gui.ppt_main.mbar.tools.sep__2"))
+   group empty group = select_list
+   group object add group=select_list &
+         objects = .gui.ppt_main.mbar.tools.sep__2
+   mdi delete_macro
+end
+
+! Delete menu button
+if condition=(DB_EXISTS(".gui.ppt_main.mbar.tools.contact_kc_button"))
+   group empty group = select_list
+   group object add group=select_list &
+         objects = .gui.ppt_main.mbar.tools.contact_kc_button
+   mdi delete_macro
+end

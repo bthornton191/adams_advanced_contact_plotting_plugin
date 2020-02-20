@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<MSCPlugin xmlns="http://www.adams.com/:MDI" xmlns:kernel="http://www.adams.com/:kernel">
+
+  <kernel:Bibliography>
+    <File schema="plugin" version="1.0.0" publicationDate="2020-02-20 5:30:00 -0500" />
+    <Revision version="1" />
+    <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/Products/CAE-Tools/Adams.aspx" />
+    <Author user="ben.thornton" name="Ben Thornton" />
+    <Environment hostName="Unknown" operatingSystem="Unknown" />
+    <Application name="Adams" version="" />
+  </kernel:Bibliography>
+
+  <Plugin>
+    <Name>Advanced Contact Plotting</Name>
+    <Description>
+      <![CDATA[Advanced Contact Plotting]]>
+    </Description>
+    <Version>0.0.1</Version>
+    <Author>Ben Thornton</Author>
+    <Type>Public</Type>
+    <LicenseFeature></LicenseFeature>
+    <ValidWith>aview:ppt</ValidWith>
+    <NotValidWith></NotValidWith>
+  </Plugin>
+
+</MSCPlugin>

@@ -1,0 +1,486 @@
+! Adams View Adams 2019.2 (built Jun 19 2019)
+! Reading configuration file 'C:\PROGRA~1\MSC~1.SOF\Adams\2019_2\adrill/adrill.cfg'
+! Reading configuration file 'C:\Users\bthornt/.adrill.cfg'
+! >> ! AVIEW_SETTINGS_90 : aviewBS.cmd : 2019/08/01,07:58:09
+! >> !
+! >> ! Warning: This file will be overwritten by the 'settings save' command.
+! >> !
+! >> !
+! >> !-------------------------------------------
+! >> ! Units
+! >> !-------------------------------------------
+! >> default units &
+! &>    length=inch &
+! &>    mass=pound_mass &
+! &>    force=pound_force &
+! &>    time=second &
+! &>    angle=degrees &
+! &>    frequency=hz
+! >> !
+! >> !-------------------------------------------
+! >> ! Working Grid
+! >> !-------------------------------------------
+! >> interface grid modify &
+! &>    dots_vis    = yes &
+! &>    dot_color   = .colors.NO_COLOR &
+! &>    dot_size    = 1 &
+! &>    lines_vis   = no &
+! &>    line_weight = 1 &
+! &>    line_style  = solid &
+! &>    line_color  = .colors.NO_COLOR &
+! &>    axes_vis    = yes &
+! &>    axis_weight = 1 &
+! &>    axis_color  = .colors.NO_COLOR &
+! &>    triad_vis   = no &
+! &>    extent      = (100mm),(100mm) &
+! &>    spacing     = (10mm),(10mm)
+! >> !
+! >> !-------------------------------------------
+! >> ! Icons
+! >> !-------------------------------------------
+! >> default attributes &
+! &>    icon_vis=on &
+! &>    size_of_icons=0.078740
+! >> geometry attributes geometry_name=.icons.part_axis visibility=off
+! >> geometry attributes geometry_name=.icons.part_cg visibility=off
+! >> default icon_naming show_as=full_name 
+! >> !
+! >> !-------------------------------------------
+! >> ! Colors
+! >> !-------------------------------------------
+! >> .colors.NO_COLOR.components = 0, 0, 0
+! >> .colors.BLACK.components = 0, 0, 0
+! >> .colors.WHITE.components = 1, 1, 1
+! >> .colors.RED.components = 1, 0, 0
+! >> .colors.GREEN.components = 0, 1, 0
+! >> .colors.BLUE.components = 0, 0, 1
+! >> .colors.CYAN.components = 0, 1, 1
+! >> .colors.MAGENTA.components = 1, 0, 0.61
+! >> .colors.YELLOW.components = 1, 1, 0
+! >> .colors.SKYBLUE.components = 0.44, 0.85, 1
+! >> .colors.MIDNIGHT_BLUE.components = 0, 0, 0.36
+! >> .colors.BLUE_GRAY.components = 0.16, 0.46, 0.65
+! >> .colors.DARK_GRAY.components = 0.325, 0.325, 0.325
+! >> .colors.SILVER.components = 0.72, 0.72, 0.72
+! >> .colors.PEACH.components = 1, 0.64, 0.49
+! >> .colors.MAIZE.components = 1, 0.67, 0
+! >> .colors.Background.components = 0.196, 0.196, 0.8
+! >> .colors.Background.gradient = 2
+! >> .colors.Aquamarine.components = 0, 0.95, 0.84
+! >> .colors.BlueViolet.components = 0.541, 0.169, 0.886
+! >> .colors.Brown.components = 0.43, 0.33, 0.33
+! >> .colors.CadetBlue.components = 0.372, 0.62, 0.627
+! >> .colors.ClayRed.components = 0.42, 0.224, 0.224
+! >> .colors.Coral.components = 1, 0.447, 0.337
+! >> .colors.CornflowerBlue.components = 0.42, 0.42, 1
+! >> .colors.DkGreen.components = 0, 0.65, 0
+! >> .colors.DkOliveGreen.components = 0.319, 0.319, 0
+! >> .colors.DkOrchid.components = 0.6, 0.196, 0.8
+! >> .colors.DkSlateBlue.components = 0.22, 0.294, 0.4
+! >> .colors.DkSlateGray.components = 0.184, 0.31, 0.31
+! >> .colors.DkTurquoise.components = 0, 0.364, 0.416
+! >> .colors.DkYellow.components = 0.9, 0.8, 0.15
+! >> .colors.DkRed.components = 0.65, 0, 0
+! >> .colors.DimGray.components = 0.412, 0.412, 0.412
+! >> .colors.Firebrick.components = 0.557, 0.137, 0.137
+! >> .colors.ForestGreen.components = 0, 0.23, 0.05
+! >> .colors.Goldenrod.components = 0.855, 0.647, 0.126
+! >> .colors.Gray.components = 0.494, 0.494, 0.494
+! >> .colors.GreenYellow.components = 0.808, 1, 0
+! >> .colors.Khaki.components = 0.702, 0.702, 0.494
+! >> .colors.LtBlue.components = 0.69, 0.886, 1
+! >> .colors.LtGray.components = 0.659, 0.659, 0.659
+! >> .colors.LtKhaki.components = 0.94, 0.9, 0.55
+! >> .colors.LtMagenta.components = 1, 0.35, 0.747
+! >> .colors.LtSteelBlue.components = 0.486, 0.596, 0.827
+! >> .colors.LimeGreen.components = 0.196, 0.804, 0.196
+! >> .colors.Marine.components = 0, 0.33, 1
+! >> .colors.Maroon.components = 0.498, 0, 0.228
+! >> .colors.MedAquamarine.components = 0, 0.576, 0.561
+! >> .colors.MedBlue.components = 0.196, 0.196, 0.8
+! >> .colors.MedForest.components = 0.196, 0.506, 0.294
+! >> .colors.MedGolden.components = 0.82, 0.757, 0.4
+! >> .colors.MedOrchid.components = 0.792, 0.333, 0.828
+! >> .colors.MedSeaGray.components = 0.322, 0.502, 0.475
+! >> .colors.MedSlateBlue.components = 0.416, 0.416, 0.553
+! >> .colors.MedSpring.components = 0.137, 0.557, 0.137
+! >> .colors.MedTurquoise.components = 0, 0.824, 0.824
+! >> .colors.MedViolet.components = 0.58, 0, 0.828
+! >> .colors.MidnightBlue2.components = 0.184, 0.184, 0.392
+! >> .colors.Navy.components = 0.137, 0.137, 0.459
+! >> .colors.NearRed.components = 0.9, 0, 0
+! >> .colors.NearWhite.components = 0.9, 0.9, 0.9
+! >> .colors.NiceGreen.components = 0, 0.33, 0
+! >> .colors.Orange.components = 1, 0.271, 0
+! >> .colors.Orange2.components = 1, 0.53, 0
+! >> .colors.Orchid.components = 0.937, 0.518, 0.937
+! >> .colors.PaleGreen.components = 0.451, 0.871, 0.471
+! >> .colors.Pink.components = 1, 0.71, 0.773
+! >> .colors.Plum.components = 0.54, 0, 0.44
+! >> .colors.Salmon.components = 1, 0.49, 0.3
+! >> .colors.SeaGreen.components = 0.322, 0.584, 0.518
+! >> .colors.Sienna.components = 0.588, 0.322, 0.176
+! >> .colors.SlateBlue.components = 0.494, 0.533, 0.671
+! >> .colors.SlateBlue2.components = 0.416, 0.353, 0.804
+! >> .colors.SpringGreen.components = 0.255, 0.675, 0.255
+! >> .colors.SteelBlue.components = 0.329, 0.439, 0.667
+! >> .colors.Tan.components = 0.824, 0.706, 0.549
+! >> .colors.Tan2.components = 0.871, 0.722, 0.529
+! >> .colors.Thistle.components = 0.846, 0.749, 0.846
+! >> .colors.Turquoise.components = 0.116, 0.889, 1
+! >> .colors.Violet.components = 0.612, 0.243, 0.808
+! >> .colors.VioletRed.components = 0.816, 0.126, 0.565
+! >> .colors.VlMagenta.components = 1, 0.66, 1
+! >> .colors.VlGray.components = 0.7, 0.7, 0.8
+! >> .colors.Wheat.components = 0.961, 0.871, 0.702
+! >> .colors.YellowGreen.components = 0.604, 0.804, 0.196
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R168G158B141"))
+! +1>>   color create color = .colors.COLOR_R168G158B141 red_component = 0.659 green_component = 0.62 blue_component = 0.557
+! +1>> else
+! -1>>   .colors.COLOR_R168G158B141.components = 0.659, 0.62, 0.557
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R175G168B163"))
+! +1>>   color create color = .colors.COLOR_R175G168B163 red_component = 0.686 green_component = 0.659 blue_component = 0.639
+! +1>> else
+! -1>>   .colors.COLOR_R175G168B163.components = 0.686, 0.659, 0.639
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R165G158B148"))
+! +1>>   color create color = .colors.COLOR_R165G158B148 red_component = 0.647 green_component = 0.62 blue_component = 0.584
+! +1>> else
+! -1>>   .colors.COLOR_R165G158B148.components = 0.647, 0.62, 0.584
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R227G227B227"))
+! +1>>   color create color = .colors.COLOR_R227G227B227 red_component = 0.89 green_component = 0.89 blue_component = 0.89
+! +1>> else
+! -1>>   .colors.COLOR_R227G227B227.components = 0.89, 0.89, 0.89
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R245G223B153"))
+! +1>>   color create color = .colors.COLOR_R245G223B153 red_component = 0.965 green_component = 0.875 blue_component = 0.6
+! +1>> else
+! -1>>   .colors.COLOR_R245G223B153.components = 0.965, 0.875, 0.6
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R229G229B229"))
+! +1>>   color create color = .colors.COLOR_R229G229B229 red_component = 0.898 green_component = 0.898 blue_component = 0.898
+! +1>> else
+! -1>>   .colors.COLOR_R229G229B229.components = 0.898, 0.898, 0.898
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R024G024B024"))
+! +1>>   color create color = .colors.COLOR_R024G024B024 red_component = 0.098 green_component = 0.098 blue_component = 0.098
+! +1>> else
+! -1>>   .colors.COLOR_R024G024B024.components = 0.098, 0.098, 0.098
+! -1>> end
+! >> if cond=(!DB_EXISTS(".colors.COLOR_R051G051B051"))
+! +1>>   color create color = .colors.COLOR_R051G051B051 red_component = 0.2 green_component = 0.2 blue_component = 0.2
+! +1>> else
+! -1>>   .colors.COLOR_R051G051B051.components = 0.2, 0.2, 0.2
+! -1>> end
+! >> !
+! >> !-------------------------------------------
+! >> ! Force Graphics
+! >> !-------------------------------------------
+! >> default force &
+! &>    force_scale=0.100000 &
+! &>    torque_scale=1.000000 &
+! &>    display_text=yes &
+! &>    decimal_places=0 &
+! &>    display_wireframe=no &
+! &>    always_in_front=no
+! >> !
+! >> !-------------------------------------------
+! >> ! Vector Plot Graphics
+! >> !-------------------------------------------
+! >> default vector_plots &
+! &>    scale=1.000000 &
+! &>    display_torque=no
+! >> !
+! >> !-------------------------------------------
+! >> ! Flex Bodies
+! >> !-------------------------------------------
+! >> defaults geometry
+! >> !
+! >> !-------------------------------------------
+! >> ! Tool Bars and Tool Boxes
+! >> !-------------------------------------------
+! >> int dia undisplay dia=.gui.moag
+! >> int tool mod tool=.gui.main.tbar3 top=yes
+! >> int tool undisplay tool=.gui.main.tbar3
+! >> int tool mod tool=.gui.main.tbar4 top=no
+! >> int tool undisplay tool=.gui.main.tbar4
+! >> !
+! >> !-------------------------------------------
+! >> ! View management
+! >> !-------------------------------------------
+! >> var set var=.MDI.up_axis str="Y_pos"
+! >> var set var=.MDI.forward_axis str="Z_pos"
+! >> !
+! >> !-------------------------------------------
+! >> ! Simulation Preferences
+! >> !-------------------------------------------
+! >> .sim_preferences.alert=0
+! >> .sim_preferences.chart_objectives=1
+! >> .sim_preferences.chart_variables=0
+! >> .sim_preferences.enable_debugger=0
+! >> .sim_preferences.file_prefix="Adams"
+! >> .sim_preferences.highlight_objects=0
+! >> .sim_preferences.icon_visibility=0
+! >> .sim_preferences.integrator_order_measure=0
+! >> .sim_preferences.iterations_per_step_measure=0
+! >> .sim_preferences.m_analysis_prefix="Multi_Run"
+! >> .sim_preferences.m_save_analyses=0
+! >> .sim_preferences.monitor=4
+! >> .sim_preferences.remote_compute=0
+! >> .sim_preferences.s_analysis_prefix="Run"
+! >> .sim_preferences.s_save_analyses=0
+! >> .sim_preferences.save_curves=1
+! >> .sim_preferences.save_files=0
+! >> .sim_preferences.load_analysis=1
+! >> .sim_preferences.show_all_messages=0
+! >> .sim_preferences.show_summary=0
+! >> .sim_preferences.show_table=0
+! >> .sim_preferences.solver_preference=0
+! >> .sim_preferences.static_imbalance_measure=0
+! >> .sim_preferences.step_size_measure=0
+! >> .sim_preferences.stop_on_error=1
+! >> .sim_preferences.time_delay=0.000000
+! >> .sim_preferences.track_model_element=0
+! >> .sim_preferences.update=4
+! >> .sim_preferences.verify_first=1
+! >> .sim_preferences.hold_solver_license=1
+! >> !
+! >> !-------------------------------------------
+! >> ! Animation Preferences
+! >> !-------------------------------------------
+! >> default animation_settings loop=play_forever
+! >> !
+! >> !-------------------------------------------
+! >> ! Run-time Functions
+! >> !-------------------------------------------
+! >> default function_references show_as=partial_name 
+! >> !
+! >> !-------------------------------------------
+! >> ! Plot Attributes
+! >> !-------------------------------------------
+! >> default plt_attributes &
+! &>    grid_visibility=on &
+! &>    secondary_grid_visibility=on &
+! &>    tic_visibility=on &
+! &>    duplicate_points=use_last &
+! &>    legend_visibility=on &
+! &>    legend_border_visibility=on &
+! &>    simulation_legend_visibility=on &
+! &>    simulation_legend_border_visibility=on &
+! &>    axis_label_visibility=on &
+! &>    symbol_visibility=on &
+! &>    border_line_type=solid &
+! &>    border_thickness=1.000000 &
+! &>    title_color=BLACK &
+! &>    subtitle_color=BLACK &
+! &>    haxis_label_color=BLACK &
+! &>    vaxis_label_color=BLACK &
+! &>    axis_numbers_color=BLACK &
+! &>    grid_color=SILVER &
+! &>    secondary_grid_color=SILVER &
+! &>    tic_color=BLACK &
+! &>    border_color=BLACK &
+! &>    legend_border_color=BLACK &
+! &>    simulation_legend_border_color=BLACK &
+! &>    axis_color=BLACK &
+! &>    scientific_notation=-4,5 &
+! &>    trailing_zeros=off &
+! &>    decimal_places=4 &
+! &>    legend_placement=top_left &
+! &>    simulation_legend_placement=top_right &
+! &>    legend_fill=on &
+! &>    simulation_legend_fill=on &
+! &>    legend_border_line_type=solid &
+! &>    simulation_legend_border_line_type=solid &
+! &>    graph_area=0.000000,0.000000,160.000000,93.000000 &
+! &>    zero_line=on
+! >> !
+! >> default plotting &
+! &>    spec_line_color=BLUE &
+! &>    spec_line_thickness=3.000000 &
+! &>    spec_line_line_type=solid &
+! &>    curve_auto_thickness=yes &
+! &>    curve_auto_color=yes &
+! &>    curve_auto_line_type=yes &
+! &>    curve_symbol=none &
+! &>    curve_frozen=no &
+! &>    curve_increment_symbol=1 &
+! &>    haxis_type=linear &
+! &>    haxis_autoscale=on &
+! &>    haxis_default_limits=0.000000,0.000000 &
+! &>    haxis_label_offset=5.000000 &
+! &>    haxis_autodivs=on &
+! &>    haxis_minor_divs=2 &
+! &>    haxis_placement=alternate &
+! &>    vaxis_type=linear &
+! &>    vaxis_autoscale=on &
+! &>    vaxis_default_limits=0.000000,0.000000 &
+! &>    vaxis_label_offset=15.000000 &
+! &>    vaxis_autodivs=on &
+! &>    vaxis_minor_divs=2 &
+! &>    vaxis_placement=alternate &
+! &>    grid_color=SILVER &
+! &>    grid_line_type=solid &
+! &>    grid_thickness=0.500000 &
+! &>    secondary_grid_color=SILVER &
+! &>    secondary_grid_line_type=solid &
+! &>    secondary_grid_thickness=0.500000 &
+! &>    auto_graph_area=yes &
+! &>    dependent_axis_type=vertical
+! >> defaults plt_attributes plot_auto_title = "on"
+! >> defaults plt_attributes plot_auto_subtitle = "on"
+! >> defaults plt_attributes plot_auto_date = "on"
+! >> defaults plt_attributes plot_auto_analysis_name = "on"
+! >> defaults plt_attributes plot_table = "no"
+! >> !
+! >> !-------------------------------------------
+! >> ! Optimizer Settings
+! >> !-------------------------------------------
+! >> .sim_preferences.opt_maximum_iterations=100
+! >> .sim_preferences.opt_convergence_tolerance=1.000000e-03
+! >> simulation multi_run set opt_differencing_technique=forward_difference
+! >> .sim_preferences.opt_scaled_perturbation=1.000000e-03
+! >> simulation multi_run set opt_algorithm=optdes_grg
+! >> .sim_preferences.opt_debug=0
+! >> .sim_preferences.opt_slp_convergence_iter=2
+! >> !
+! >> !-------------------------------------------
+! >> ! GUI Display Settings
+! >> !-------------------------------------------
+! >> help tips=on
+! >> interface coord_window display=off
+! >> !
+! >> defaults interface style=view_refresh
+! >> !
+! >> !-------------------------------------------
+! >> ! Graphics Settings
+! >> !-------------------------------------------
+! >> default attributes endcap_visibility=on
+! >> defaults graphics  &
+! &>   caching = precache  &
+! &>   cache_data_compression = no_compression  &
+! &>   memory_caching = on
+! >> !
+! >> !-------------------------------------------
+! >> ! Lighting Settings
+! >> !-------------------------------------------
+! >> !
+! >> defaults lights light = top_left enable = no
+! >> defaults lights light = top enable = no
+! >> defaults lights light = top_right enable = no
+! >> defaults lights light = left enable = no
+! >> defaults lights light = center enable = no
+! >> defaults lights light = right enable = no
+! >> defaults lights light = bottom_left enable = no
+! >> defaults lights light = bottom enable = no
+! >> defaults lights light = bottom_right enable = no
+! >> !
+! >> defaults lights light = top_left enable = yes
+! >> defaults lights light = top enable = no
+! >> defaults lights light = top_right enable = no
+! >> defaults lights light = left enable = no
+! >> defaults lights light = center enable = no
+! >> defaults lights light = right enable = no
+! >> defaults lights light = bottom_left enable = no
+! >> defaults lights light = bottom enable = no
+! >> defaults lights light = bottom_right enable = no
+! >> !
+! >> defaults graphics light_intensity = 1.000000
+! >> defaults graphics ambient_light = 0.000000
+! >> defaults graphics camera_angle = 45.000000
+! >> defaults graphics lighting = two_sided
+! >> defaults graphics reflections = on
+! >> defaults graphics transparent_quality = quality
+! >> !
+! >> !-------------------------------------------
+! >> ! File settings
+! >> !-------------------------------------------
+! >> default command on_error=ignore_command 
+! >> !
+! >> !-------------------------------------------
+! >> ! Cache File settings
+! >> !-------------------------------------------
+! >> defaults file_cache_purge delete_on_exit=no
+! >> !
+! >> !-------------------------------------------
+! >> ! Font Settings...
+! >> !-------------------------------------------
+! >> default attributes screen_font="sans serif"
+! >> default attributes postscript_font="helvetica"
+! >> default plt_attributes legend_font_size=7
+! >> default plt_attributes date_note_font_size=7
+! >> default plt_attributes subtitle_font_size=7
+! >> default plt_attributes title_font_size=7
+! >> default plt_attributes table_font_size=7
+! >> default plotting axis_numbers_font_size=7
+! >> default plotting axis_label_font_size=7
+! >> default report base_font_size=7
+! >> !
+! >> !-------------------------------------------
+! >> ! Orientation Settings...
+! >> !-------------------------------------------
+! >> variable set variable = .MDI.forward_axis string="Z_pos"
+! >> variable set variable = .MDI.up_axis string="Y_pos"
+! >> !
+! >> !-------------------------------------------
+! >> ! Shell Settings...
+! >> !-------------------------------------------
+! >> defaults geometry trimesh_shells = "yes"
+! >> !
+! >> !-------------------------------------------
+! >> ! Page Settings...
+! >> !-------------------------------------------
+! >> defaults page_attributes header_left_font_size= 9
+! >> defaults page_attributes header_left_color= .colors.BLACK
+! >> defaults page_attributes header_left_image_height= 50.000000
+! >> defaults page_attributes header_center_font_size= 9
+! >> defaults page_attributes header_center_color= .colors.BLACK
+! >> defaults page_attributes header_center_image_height= 50.000000
+! >> defaults page_attributes header_right_font_size= 9
+! >> defaults page_attributes header_right_color= .colors.BLACK
+! >> defaults page_attributes header_right_image_height= 50.000000
+! >> defaults page_attributes footer_left_font_size= 9
+! >> defaults page_attributes footer_left_color= .colors.BLACK
+! >> defaults page_attributes footer_left_image_height= 50.000000
+! >> defaults page_attributes footer_center_font_size= 9
+! >> defaults page_attributes footer_center_color= .colors.BLACK
+! >> defaults page_attributes footer_center_image_height= 50.000000
+! >> defaults page_attributes footer_right_font_size= 9
+! >> defaults page_attributes footer_right_color= .colors.BLACK
+! >> defaults page_attributes footer_right_image_height= 50.000000
+! Enter a command, '?', or 'help'.
+! Automatically executing Command file aview.cmd.
+! >> def com echo=on
+! >> 
+! >> library create library_name = .contact_kc_plot
+! >> 
+! >> macro read &
+! &>    macro_name = .contact_kc_plot.load &
+! &>    user_entered_command = "mdi contact_kc_plot load" file= "contact_kc_plot_load.mac" &
+! &>    wrap_in_undo = no &
+! &>    create_panel = no
+! >>    
+! >> macro read &
+! &>    macro_name = .contact_kc_plot.unload &
+! &>    user_entered_command = "mdi contact_kc_plot unload" file= "contact_kc_plot_unload.mac" &
+! &>    wrap_in_undo=no &
+! &>    create_panel=no
+! >> 
+! >> 
+! >> lis ent ent=.contact_kc_plot
+! >> fil bin write file="win64\contact_kc_plot.bin" ent=.contact_kc_plot
+! Writing the file: 'win64/contact_kc_plot.bin'.
+! File writing completed.
+! >> 
+! >> var set var=imv93 &
+! &>    string="> NOTE: --------------------------------------", &
+! &>           "> Library image file contact_kc_plot.bin written.", &
+! &>           "> You must move this to the win64 directory if ", &
+! &>           "> you want ADrill Extensions to be available.", &
+! &>           "> --------------------------------------------"
+! >> 
+! >> lis var var=imv93
+! >> var del var=imv93
+! Command file is exhausted, batch run is finished.
