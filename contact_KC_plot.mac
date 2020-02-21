@@ -14,20 +14,21 @@ analysis collate_contacts &
 
 var set var=sep_str string='.'
 
-! -----------
-! Create Plot
-! -----------
-! Check if plot name already exists and append a '_1' if it does
+! Check if plot name already exists and add an incremental suffix if needed
+
 if condition = (DB_EXISTS(eval("."//"$New_plot_name")))
 	variable set &
 	   variable_name = plotname &
-	   string = (eval("$New_plot_name"//"_1"))
+	   string = (UNIQUE_NAME(eval("."//"$New_plot_name")))
 else
 	variable set &
 	   variable_name = plotname &
 	   string = (eval("$New_plot_name"))
 end
 	
+! -----------
+! Create Plot
+! -----------
 xy_plot template create plot=(eval("."//plotname)) &
    title = (eval("$New_plot_name")) &
    auto_subtitle=yes &
