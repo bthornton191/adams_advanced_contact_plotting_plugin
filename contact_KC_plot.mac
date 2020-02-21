@@ -19,7 +19,7 @@ var set var=sep_str string='.'
 if condition = (DB_EXISTS(eval("."//"$New_plot_name")))
 	variable set &
 	   variable_name = plotname &
-	   string = (UNIQUE_NAME(eval("."//"$New_plot_name")))
+	   string = (UNIQUE_NAME(eval("$New_plot_name")))
 else
 	variable set &
 	   variable_name = plotname &
