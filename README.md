@@ -22,6 +22,10 @@ Once the plugin is loaded you can the follow the steps below to generate the plo
 4. Select a name for the new plot that will be created
 5. Click *OK*
 
+## Method
+
+> **TODO** Add a paragraph about the method for generating the contact
+
 ## Modifying
 
-Once the codebase has been modified, run build_bin.cmd in adams view.  This will update adams_advanced_contact_plotting_plugin.bin.
+Once the codebase has been modified, run build_bin.cmd in adams view.  This will update adams_advanced_contact_plotting_plugin.bin.  Make sure you set this repository as your working direcory in Adams/View.

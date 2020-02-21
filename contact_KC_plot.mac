@@ -39,7 +39,7 @@ xy_plot template create plot=(eval("."//plotname)) &
 ! -----------------------------
 ! FLEX-TO-FLEX OR FLEX-TO-SOLID
 ! -----------------------------
-if condition = (eval($contact_obj.type)=="8")
+if condition = (eval($contact_obj.type)=="8"||eval($contact_obj.type)=="7")
    ! Find i_flex contact nodes
    variable set &
       variable_name = contact_nodes &
@@ -109,12 +109,6 @@ elseif condition = (eval($contact_obj.type)=="0")
       y_units = "force" &
       x_units = "time"
    plotcurve3d curve modify curve=(eval("."//plotname//".damping_force")) legend="damping_force"   
-   
-   variable delete &
-      variable_name = contact_nodes
-   
-   variable delete &
-      variable_name = node_count
 end
  
 ! -----------
