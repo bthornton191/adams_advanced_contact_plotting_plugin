@@ -17,7 +17,7 @@
       <![CDATA[An extension to MSC Adams PPT which adds a button for plotting the components of a contact normal force seperated in to stiffness force and damping force.]]>
     </Description>
     <Version>0.0.1</Version>
-    <Author>Ben Thornton</Author>
+    <Author>Ben Thornton & Maziar Rostamian</Author>
     <Type>Public</Type>
     <LicenseFeature></LicenseFeature>
     <ValidWith>aview:ppt</ValidWith>
