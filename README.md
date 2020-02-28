@@ -4,7 +4,7 @@ An extension to MSC Adams PPT which adds a button for plotting the components of
 
 ## Installing on Windows
 
-Download **adams_advanced_contact_plotting_plugin.bin** and **adams_advanced_contact_plotting_plugin_plg.xml** and place them in your Adams installation at **$topdir\win64**.  Open Adams View and navigate to *Tools>Plugin Manager*.  Ensure that *Load* and *Load at Startup* are both checked in the *Advanced Contact Plotting* row.  
+Download **adams_advanced_contact_plotting_plugin.bin** and **adams_advanced_contact_plotting_plugin_plg.xml** from the **win64** directory and place them in your Adams installation at **$topdir\win64**.  Open Adams View and navigate to *Tools>Plugin Manager*.  Ensure that *Load* and *Load at Startup* are both checked in the *Advanced Contact Plotting* row.  
 
 > **NOTE:** You can ignore the message about versions as long as you meet the compatibility criteria below.
 
