@@ -4,13 +4,17 @@ An extension to MSC Adams PPT which adds a button for plotting the components of
 
 ## Installing on Windows
 
-Download **adams_advanced_contact_plotting_plugin.bin** and **adams_advanced_contact_plotting_plugin_plg.xml** and place them in your Adams installation at **$topdir\win64**.  Open Adams View and navigate to *Tools>Plugin Manager*.  Ensure that *Load* and *Load at Startup* are both checked in the *Advanced Contact Plotting* row.
+Download **adams_advanced_contact_plotting_plugin.bin** and **adams_advanced_contact_plotting_plugin_plg.xml** and place them in your Adams installation at **$topdir\win64**.  Open Adams View and navigate to *Tools>Plugin Manager*.  Ensure that *Load* and *Load at Startup* are both checked in the *Advanced Contact Plotting* row.  
 
-> **NOTE:** The plugin is not currently supported on other platforms
+> **NOTE:** You can ignore the message about versions as long as you meet the compatibility criteria below.
+
+## Installing on Linux
+
+This plugin is not currently supported on linux.
 
 ## Compatibility
 
-The **advanced_contact_plotting.bin** file included in this repository was created for Adams\View **2019.2**.  It *may* work on other versions.  If not, you can run **build_bin.cmd** in your version of Adams\View to generate a version specific **advanced_contact_plotting.bin** file.
+The **advanced_contact_plotting.bin** file included in this repository was created for Adams\View **2014**, but it will work with all versions of Adams **after 2014**.  It is not compatible with prior versions.  If needed, you can run **build_bin.cmd** in your version of Adams\View to generate a version specific **advanced_contact_plotting.bin** file.
 
 ## Usage
 
@@ -24,7 +28,7 @@ Once the plugin is loaded you can the follow the steps below to generate the plo
 
 ## Method
 
-> **TODO** Add a paragraph about the method for generating the contact
+**TODO**: Add a paragraph about the method for generating the contact
 
 ## Modifying
 
